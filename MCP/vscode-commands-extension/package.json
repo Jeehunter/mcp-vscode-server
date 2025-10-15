@@ -1,0 +1,115 @@
+{
+  "name": "vscode-commands-extension",
+  "displayName": "VSCode Commands Extension for MCP",
+  "description": "Extension to provide VSCode commands API for MCP server",
+  "version": "0.1.0",
+  "publisher": "cline-mcp",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-commands.openExplorer",
+        "title": "Open Explorer Panel",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.openSearch",
+        "title": "Open Search Panel",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.openDebug",
+        "title": "Open Debug Panel",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.openExtensions",
+        "title": "Open Extensions Panel",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.openSourceControl",
+        "title": "Open Source Control Panel",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.toggleSidebar",
+        "title": "Toggle Sidebar",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.openFile",
+        "title": "Open File",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.openFolder",
+        "title": "Open Folder",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.newFile",
+        "title": "Create New File",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.splitEditor",
+        "title": "Split Editor",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.closeEditor",
+        "title": "Close Active Editor",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.closeAllEditors",
+        "title": "Close All Editors",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.toggleTerminal",
+        "title": "Toggle Terminal",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.togglePanel",
+        "title": "Toggle Panel",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.changeTheme",
+        "title": "Change Theme",
+        "category": "MCP Commands"
+      },
+      {
+        "command": "vscode-commands.saveWorkspace",
+        "title": "Save Workspace",
+        "category": "MCP Commands"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/ws": "^8.18.1",
+    "ws": "^8.18.3"
+  }
+}
