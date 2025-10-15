@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "autoApprove": [
+        "browser_navigate",
+        "browser_snapshot"
+      ],
+      "timeout": 60,
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "type": "stdio",
+      "disabled": true
+    },
+    "vscode-commands": {
+      "command": "node",
+      "args": [
+        "C:/Users/70912/Documents/Cline/MCP/vscode-commands-server/build/index.js"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
